@@ -253,6 +253,7 @@ nav a.ativo::after {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.9;
     max-width: 650px;
+    text-align: justify;
 }
 
 .hero-cta {
@@ -795,8 +796,16 @@ main {
     transform: translateX(8px);
 }
 
+.accordion-header:hover .accordion-subtitle {
+    color: var(--cinza-escuro);
+}
+
+.accordion-title-wrapper {
+    flex: 1;
+}
+
 .accordion-header h2 {
-    margin: 0;
+    margin: 0 0 0.75rem 0;
     font-family: "Poppins", "Segoe UI", sans-serif;
     color: var(--cinza-escuro);
     font-size: 1.1rem;
@@ -804,6 +813,18 @@ main {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.accordion-subtitle {
+    margin: 0;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--cinza-metal);
+    line-height: 1.6;
+    transition: color 0.4s ease;
 }
 
 .accordion-icon {
@@ -825,6 +846,10 @@ main {
 .accordion.active .accordion-header h2 {
     color: var(--azul);
     transform: translateX(8px);
+}
+
+.accordion.active .accordion-header .accordion-subtitle {
+    color: var(--cinza-escuro);
 }
 
 .accordion.active .accordion-header::before {
@@ -1083,8 +1108,8 @@ footer {
     .footer-secondary {
         gap: 1rem 1.5rem;
     }
-}
-    letter-spacing: 0.02em;
+
+    
 }
 
 @media (max-width: 768px) {
