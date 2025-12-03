@@ -445,7 +445,7 @@ main {
     position: relative;
     overflow: hidden;
     border: none;
-    background: linear-gradient(rgba(10, 10, 10, 0.65), rgba(10, 10, 10, 0.75)), url('assets/alunos.jpeg') center center / cover no-repeat;
+    background: linear-gradient(rgba(10, 10, 10, 0.65), rgba(10, 10, 10, 0.75)), url('assets/alunos.jpeg') center 65% / cover no-repeat;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     width: 100vw;
@@ -461,6 +461,7 @@ main {
     padding: 6rem 2rem;
     max-width: 1100px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .encontro-title {
@@ -470,7 +471,7 @@ main {
     text-transform: none;
     letter-spacing: -0.02em;
     color: var(--branco);
-    margin: 0 0 1.5rem 0;
+    margin: 0 auto 1.5rem auto;
     position: relative;
     display: block;
 }
@@ -483,8 +484,9 @@ main {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.1rem;
     line-height: 1.9;
-    margin-bottom: 4rem;
-    max-width: 580px;
+    margin: 0 auto 4rem auto;
+    max-width: 800px;
+    text-align: justify;
 }
 
 .encontro-grid {
