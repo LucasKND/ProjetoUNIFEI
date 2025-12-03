@@ -1,4 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Hamburger menu functionality
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    if (menuToggle && nav) {
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active");
+            nav.classList.toggle("active");
+            const isExpanded = menuToggle.classList.contains("active");
+            menuToggle.setAttribute("aria-expanded", isExpanded);
+        });
+
+        // Close menu when clicking a link
+        nav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                menuToggle.classList.remove("active");
+                nav.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!nav.contains(e.target) && !menuToggle.contains(e.target) && nav.classList.contains("active")) {
+                menuToggle.classList.remove("active");
+                nav.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            }
+        });
+    }
+
     // Accordion functionality
     const accordionHeaders = document.querySelectorAll(".accordion-header");
     

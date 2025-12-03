@@ -7,17 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header class="topbar">
         <a href="#inicio" class="brand">
             <img src="assets/logo-unifei-oficial.png" alt="UNIFEI" class="brand-logo">
         </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
+                <li><a href="#bctec">BCTec</a></li>
                 <li><a href="#experimento-leds">Experimento LED</a></li>
                 <li><a href="#experimento-pendulo">Experimento Pêndulo</a></li>
                 <li><a href="#encontro-alunos">Encontro dos Alunos</a></li>
@@ -30,6 +34,20 @@
             <h1>Experimentos de Física: LEDs e Pêndulo Simples</h1>
             <p>Relatório interativo com os principais resultados, imagens e materiais coletados durante os dois experimentos realizados em laboratório: caracterização óptica de LEDs semicondutores e análise do movimento harmônico simples de um pêndulo.</p>
             
+        </div>
+    </section>
+
+    <section class="bctec-section" id="bctec">
+        <div class="bctec-container">
+            <div class="bctec-image">
+                <img src="assets/bctec[.jpg" alt="BCTEC - Bacharelado em Ciência e Tecnologia">
+            </div>
+            <div class="bctec-text">
+                <h2>Sobre o BCTec</h2>
+                <p>O Bacharelado em Ciência e Tecnologia (BCTec) é um curso de graduação da UNIFEI que proporciona uma formação interdisciplinar sólida nas áreas de ciências exatas e engenharias.</p>
+                <p>O curso prepara os estudantes para enfrentar os desafios tecnológicos contemporâneos, desenvolvendo competências em matemática, física, química e computação, além de habilidades em resolução de problemas e pensamento crítico.</p>
+                <p>Os experimentos apresentados neste site fazem parte das atividades práticas realizadas pelos alunos do BCTec, integrando teoria e prática no aprendizado de física experimental.</p>
+            </div>
         </div>
     </section>
 
@@ -202,32 +220,72 @@
             </figure>
             </div>
         </section>
-        <section class="content-section" id="encontro-alunos">
-            <h2>Encontro dos Alunos</h2>
-            <p>Após a coleta de dados, realizamos uma sessão colaborativa para revisar os resultados, alinhar interpretações e planejar melhorias. O encontro aproximou as equipes responsáveis por cada experimento e ajudou a consolidar o aprendizado.</p>
-            <div class="grid two">
-                <div class="callout">
-                    <strong>Pontos discutidos</strong>
-                    <ul>
-                        <li>Comparação entre as leituras manuais e a análise assistida pelo Tracker®.</li>
-                        <li>Propostas para reduzir incertezas nas medições de VF e posicionamento do máximo de difração.</li>
-                        <li>Organização de um cronograma para repetir etapas críticas com equipamentos mais precisos.</li>
-                    </ul>
-                </div>
-                <div class="callout">
-                    <strong>Próximos passos</strong>
-                    <ul>
-                        <li>Documentar o procedimento atualizado para futuras turmas.</li>
-                        <li>Produzir um guia rápido com lições aprendidas de cada experimento.</li>
-                        <li>Realizar nova rodada de medições com multímetros calibrados.</li>
-                    </ul>
+        <section class="encontro-section" id="encontro-alunos">
+            <div class="encontro-bg"></div>
+            <div class="encontro-content">
+                <h2 class="encontro-title">Encontro dos Alunos</h2>
+                <p class="encontro-desc">Após a coleta de dados, realizamos uma sessão colaborativa para revisar os resultados, alinhar interpretações e planejar melhorias. O encontro aproximou as equipes responsáveis por cada experimento e ajudou a consolidar o aprendizado.</p>
+                <div class="encontro-grid">
+                    <div class="encontro-card">
+                        <h3>Pontos discutidos</h3>
+                        <ul>
+                            <li>Comparação entre as leituras manuais e a análise assistida pelo Tracker®.</li>
+                            <li>Propostas para reduzir incertezas nas medições de VF e posicionamento do máximo de difração.</li>
+                            <li>Organização de um cronograma para repetir etapas críticas com equipamentos mais precisos.</li>
+                        </ul>
+                    </div>
+                    <div class="encontro-card">
+                        <h3>Próximos passos</h3>
+                        <ul>
+                            <li>Documentar o procedimento atualizado para futuras turmas.</li>
+                            <li>Produzir um guia rápido com lições aprendidas de cada experimento.</li>
+                            <li>Realizar nova rodada de medições com multímetros calibrados.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Photo Grid -->
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="assets/img01.jpeg" alt="Foto do experimento">
+            </div>
+            <div class="photo-item">
+                <img src="assets/img02.jpeg" alt="Foto do experimento">
+            </div>
+            <div class="photo-item">
+                <img src="assets/img03.jpeg" alt="Foto do experimento">
+            </div>
+            <div class="photo-item">
+                <img src="assets/img04.jpeg" alt="Foto do experimento">
+            </div>
+            <div class="photo-item">
+                <img src="assets/img05.jpeg" alt="Foto do experimento">
+            </div>
+            <div class="photo-item">
+                <img src="assets/img6.jpeg" alt="Foto do experimento">
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>Material produzido para estudo e documentação dos experimentos.</p>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#bctec">BCTec</a></li>
+                    <li><a href="#experimento-leds">Experimento LED</a></li>
+                    <li><a href="#experimento-pendulo">Experimento Pêndulo</a></li>
+                    <li><a href="#encontro-alunos">Encontro dos Alunos</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p class="footer-author">Kamilla Evelyn de Jesus</p>
+                <p class="footer-copy">@Bctec Unifei - Direitos Reservados</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
